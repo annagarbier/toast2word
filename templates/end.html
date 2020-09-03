@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block body %}
+<h2>
+  Yay! You got it, the word was
+  <span class="special-text">{{ target_word }}</span>.
+</h2>
+<form method="POST" id="start-form">
+  {{ render_form.hidden_tag() }} {{ render_form.submit() }}
+</form>
+{% endblock %}

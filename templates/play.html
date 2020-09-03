@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block body %}
+<form action="/play" method="POST" id="guess-form" autocomplete="off">
+  Is the word more like
+  <span id="current-word">{{ current_word }}</span> or {{
+  render_form.hidden_tag() }} {{ render_form.guess() }} ?
+</form>
+<p id="info">{{ info }}</p>
+{% endblock %}

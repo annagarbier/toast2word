@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Toast2word</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div id="content">
+      <h1><a href="{{ url_for('index') }}">Toast2tword</a></h1>
+      {% block body %} {% endblock %}
+    </div>
+  </body>
+</html>

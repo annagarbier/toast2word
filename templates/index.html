@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block body %}
+<p>
+  Welcome to <span class="special-text">Toast2word</span>, a word-guessing game.
+  When you press play, the program will choose a
+  <span class="special-text">secret word</span>. Your job is to
+  <span class="special-text">guess the word one question at a time.</span>
+</p>
+<form method="POST" id="start-form">
+  {{ render_form.hidden_tag() }} {{ render_form.submit() }}
+</form>
+{% endblock %}
