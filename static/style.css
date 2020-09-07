@@ -61,3 +61,7 @@ a {
   color: var(--font-color);
   text-decoration: none;
 }
+h1 a {
+  color: var(--bg-color);
+  -webkit-text-stroke: 0.1px var(--font-color);
+}
