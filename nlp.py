@@ -12,6 +12,7 @@ model_md = spacy.load('en_core_web_md')
 
 def get_target():
     """Choose a target word from a list of common nouns."""
+    # TODO: Ensure the same target isn't chosen twise in a row.
     target = choice(nouns)
     print('The target is %s.' % (target))
     return target
@@ -94,9 +95,9 @@ def evaluate(current, guess, target):
         move = 3  # No change.
         # log += [(guess, move)]
 
-    for item in log:
-        print(item)
-    return (move, msg)
+    # for item in log:
+    #     print(item)
+    # return (move, msg)
 
 
 def vec_similarity(vec1, vec2, use_abs=True):

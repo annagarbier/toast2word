@@ -77,5 +77,4 @@ def end():
     return render_template(
         'end.html',
         target_word=target_word,
-        render_form=start_form
-    )
+        render_form=start_form)
