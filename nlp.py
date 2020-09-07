@@ -63,7 +63,7 @@ def vec(word, model=model_md):
 def evaluate(current, guess, target):
     """Evaluate a guess."""
     print('Evaluate: %s, %s, %s' % (current, guess, target))
-    global log
+    # global log
 
     current_vec = vec(current)
     guess_vec = vec(guess)
@@ -97,7 +97,7 @@ def evaluate(current, guess, target):
 
     # for item in log:
     #     print(item)
-    # return (move, msg)
+    return (move, msg)
 
 
 def vec_similarity(vec1, vec2, use_abs=True):
