@@ -48,8 +48,6 @@ Just as in the traditional game, this procedure is repeated until the guesser na
 ## To run this code
 
 ```sh
-# Install spacy, nltk, numpy.
-
 # Run in demo mode
 flask run
 
