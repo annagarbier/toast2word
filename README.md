@@ -1,8 +1,6 @@
 # Toast2word V1 (Global)
 
-A collaborative game in which a human and computer program navitage semantic space together, one question at a time.
-
-Written in Python, using SpaCy word embeddings, and Flask micro web framework.
+A collaborative game in which a human and computer program navitage semantic space together, one question at a time. Written in Python, using SpaCy word embeddings, and Flask micro web framework.
 
 ## The original folk game
 
