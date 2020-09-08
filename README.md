@@ -1,4 +1,4 @@
-# Toast-to-word
+# Toast2word V1 (Global)
 
 A collaborative game in which a human and computer program navitage semantic space together, one question at a time.
 
