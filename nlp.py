@@ -7,7 +7,6 @@ from numpy.linalg import norm
 from random import choice
 
 model_md = spacy.load('en_core_web_md')
-# log = []
 
 
 def get_target():
@@ -63,7 +62,6 @@ def vec(word, model=model_md):
 def evaluate(current, guess, target):
     """Evaluate a guess."""
     print('Evaluate: %s, %s, %s' % (current, guess, target))
-    # global log
 
     current_vec = vec(current)
     guess_vec = vec(guess)
@@ -77,13 +75,11 @@ def evaluate(current, guess, target):
             guess)
         print(msg)
         move = 0  # End game.
-        # log += [(guess, move)]
     elif guess_similarity >= current_similarity:
         msg = "It's more like '%s' than it is like '%s'." % (
             guess, current)
         print(msg)
         move = 1  # Advance.
-        # log += [(guess, move)]
     elif guess_similarity == 0.0:
         msg = "'%s' is not in the program's dictionary." % (guess)
         print(msg)
@@ -93,19 +89,14 @@ def evaluate(current, guess, target):
             current, guess)
         print(msg)
         move = 3  # No change.
-        # log += [(guess, move)]
 
-    # for item in log:
-    #     print(item)
     return (move, msg)
 
 
-def vec_similarity(vec1, vec2, use_abs=True):
+def vec_similarity(vec1, vec2):
     """Find the cosine similarity of two words."""
     if norm(vec1) > 0 and norm(vec2) > 0:
         similarity = dot(vec1, vec2) / (norm(vec1) * norm(vec2))
-        if(use_abs):
-            similarity = abs(similarity)
     else:
-        similarity = 0.0
+        similarity = -1.0
     return similarity

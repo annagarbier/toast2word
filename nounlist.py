@@ -1,3 +1,4 @@
+# TODO: This can be a much longer list.
 nouns = [
     'bunny',
     'piano',
@@ -41,7 +42,6 @@ nouns = [
     'socks',
     'skateboard',
     'jellyfish',
-    'tugboat',
     'ribbon',
     'wine',
     'beer',
