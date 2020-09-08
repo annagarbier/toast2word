@@ -1,6 +1,5 @@
 import re
 import spacy
-from nltk.corpus import wordnet as wn
 from nounlist import nouns
 from numpy import dot
 from numpy.linalg import norm
